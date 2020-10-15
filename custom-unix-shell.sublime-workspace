@@ -1,0 +1,1125 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bui",
+				"builtins"
+			],
+			[
+				"unor",
+				"unordered_set\tstandard header (since c++11)"
+			],
+			[
+				"tota",
+				"total_nf_instances"
+			],
+			[
+				"req",
+				"request_made"
+			],
+			[
+				"proces",
+				"requesting_process"
+			],
+			[
+				"reque",
+				"request_made"
+			],
+			[
+				"safe",
+				"is_safe_state"
+			],
+			[
+				"string",
+				"string_view\tstandard header (since c++17)"
+			],
+			[
+				"strin",
+				"string_to_charptr"
+			],
+			[
+				"cons",
+				"const_cast"
+			],
+			[
+				"print",
+				"print_container"
+			],
+			[
+				"ve",
+				"ve\tVectorSnippet"
+			],
+			[
+				"vec",
+				"vector\tstandard header"
+			],
+			[
+				"prin",
+				"print_vector"
+			],
+			[
+				"nf",
+				"nf_done_processes"
+			],
+			[
+				"pr",
+				"printf\tprintf …"
+			],
+			[
+				"is",
+				"is_safe_state"
+			],
+			[
+				"sa",
+				"safe_sequence"
+			],
+			[
+				"need",
+				"need_mat"
+			],
+			[
+				"tot",
+				"total_nf_instances"
+			],
+			[
+				"ma",
+				"magnitude"
+			],
+			[
+				"BO",
+				"BoxCompare"
+			],
+			[
+				"cmp_",
+				"cmp_height"
+			],
+			[
+				"cmp",
+				"cmp_volume"
+			],
+			[
+				"publi",
+				"public_method"
+			],
+			[
+				"pri",
+				"private_method"
+			],
+			[
+				"pro",
+				"protected_method"
+			],
+			[
+				"sta",
+				"start_segment"
+			],
+			[
+				"str",
+				"start_segment"
+			],
+			[
+				"get",
+				"get_name"
+			],
+			[
+				"ge",
+				"get_name"
+			],
+			[
+				"m",
+				"m_color"
+			],
+			[
+				"f",
+				"fiber"
+			],
+			[
+				"fib",
+				"m_fiber"
+			],
+			[
+				"rea",
+				"read_employee"
+			],
+			[
+				"vect",
+				"vector\tstandard header"
+			],
+			[
+				"sum",
+				"sum_of_all_elements"
+			],
+			[
+				"show",
+				"show_members"
+			],
+			[
+				"al",
+				"all_employees"
+			],
+			[
+				"oth",
+				"other_cur"
+			],
+			[
+				"pos",
+				"position_vec"
+			],
+			[
+				"unit",
+				"unit_vector"
+			],
+			[
+				"uni",
+				"unit_vector"
+			],
+			[
+				"bg",
+				"BGD_COLOR"
+			],
+			[
+				"S",
+				"Steganography"
+			],
+			[
+				"title",
+				"TITLE_BGD_COLOR"
+			],
+			[
+				"u",
+				"unmerge_image"
+			],
+			[
+				"ar",
+				"artificial_image"
+			],
+			[
+				"res",
+				"res_image"
+			],
+			[
+				"pu",
+				"pub_image"
+			],
+			[
+				"p",
+				"pub_image_path"
+			],
+			[
+				"if",
+				"ifmain\tif __name__ == '__main__'"
+			],
+			[
+				"threa",
+				"threads"
+			],
+			[
+				"thra",
+				"threads"
+			],
+			[
+				"pth",
+				"pthread_t"
+			],
+			[
+				"sd",
+				"stderr"
+			],
+			[
+				"dis",
+				"display_image"
+			],
+			[
+				"out",
+				"output_image_path"
+			],
+			[
+				"inp",
+				"input_image_path"
+			],
+			[
+				"deli",
+				"DELIMETER"
+			],
+			[
+				"new",
+				"new_name"
+			],
+			[
+				"Deco",
+				"Decode"
+			],
+			[
+				"Pri",
+				"prizeMoney"
+			],
+			[
+				"priz",
+				"prizes"
+			],
+			[
+				"text",
+				"text-align-last\tproperty"
+			],
+			[
+				"text-de",
+				"text-decoration\tproperty"
+			],
+			[
+				"mar",
+				"margin\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"ali",
+				"align-self\tproperty"
+			],
+			[
+				"a",
+				"align-content\tproperty"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"bor",
+				"border-color\tproperty"
+			],
+			[
+				"t",
+				"thick\tborder"
+			],
+			[
+				"bac",
+				"background-color\tproperty"
+			],
+			[
+				"borde",
+				"border-width\tproperty"
+			],
+			[
+				"n",
+				"n"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"sma",
+				"small_delay_2"
+			],
+			[
+				"pre",
+				"pre\tTag"
+			],
+			[
+				"path",
+				"path_to_site"
+			],
+			[
+				"pa",
+				"path_to_site"
+			],
+			[
+				"att",
+				"attr2"
+			],
+			[
+				"exe",
+				"execute_single_query"
+			],
+			[
+				"Em",
+				"EMPLOYEE_TABLE"
+			],
+			[
+				"ep",
+				"EMPLOYEE_TABLE"
+			],
+			[
+				"compa",
+				"COMPANY_DB"
+			],
+			[
+				"cra",
+				"create_table"
+			],
+			[
+				"que",
+				"queries"
+			],
+			[
+				"ex",
+				"execute_single_query"
+			],
+			[
+				"firs",
+				"first_table"
+			],
+			[
+				"cur",
+				"curs1"
+			],
+			[
+				"ins",
+				"insert_records_into_table"
+			],
+			[
+				"sele",
+				"select_all_table"
+			],
+			[
+				"fet",
+				"fetchall"
+			],
+			[
+				"des",
+				"describe_table"
+			],
+			[
+				"db",
+				"db_file_name"
+			],
+			[
+				"year",
+				"years_UM"
+			],
+			[
+				"Flying",
+				"Flying"
+			],
+			[
+				"R",
+				"Retriever"
+			],
+			[
+				"me",
+				"meow_count"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"process",
+				"Process"
+			],
+			[
+				"pt",
+				"ptr_to_object"
+			],
+			[
+				"gi",
+				"give_me_pi_times"
+			],
+			[
+				"proc",
+				"process_number"
+			],
+			[
+				"av",
+				"avg_turnaround"
+			],
+			[
+				"su",
+				"sum_waiting"
+			],
+			[
+				"read",
+				"read_process_array"
+			],
+			[
+				"arr",
+				"arrival"
+			],
+			[
+				"bu",
+				"burst_times_w_idx"
+			],
+			[
+				"b",
+				"burst_times_w_idx"
+			],
+			[
+				"averag",
+				"average_turnaround"
+			],
+			[
+				"fd",
+				"fd_zero"
+			],
+			[
+				"ba",
+				"base_class_func"
+			],
+			[
+				"de",
+				"derived_class_func"
+			],
+			[
+				"P",
+				"POINT_3D_H"
+			],
+			[
+				"Vec",
+				"Vector3d"
+			],
+			[
+				"Ve",
+				"Vector3d"
+			],
+			[
+				"mu",
+				"multiplicative_inv"
+			],
+			[
+				"comb",
+				"combfun"
+			],
+			[
+				"one",
+				"one_trues"
+			],
+			[
+				"r",
+				"r"
+			],
+			[
+				"rt",
+				"return"
+			],
+			[
+				"ch",
+				"child_name"
+			],
+			[
+				"no",
+				"noof_times_this_func_is_called"
+			],
+			[
+				"pare",
+				"parent_name"
+			],
+			[
+				"my",
+				"mypid"
+			],
+			[
+				"tex",
+				"textj"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.cc",
+			"settings":
+			{
+				"buffer_size": 2137,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "builtins.h",
+			"settings":
+			{
+				"buffer_size": 807,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/Makefile/Make.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/CC Build.sublime-build",
+					""
+				],
+				[
+					"Packages/User/CC Build.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/CC Build.sublime-build",
+				"Run"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"color sc",
+				"UI: Select Color Scheme"
+			],
+			[
+				"colo",
+				"UI: Select Color Scheme"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"git",
+				"Git: Commit"
+			],
+			[
+				"rev",
+				"File: Revert"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"toggl",
+				"Word Wrap: Toggle"
+			],
+			[
+				"rena",
+				"Rename File"
+			],
+			[
+				"revert",
+				"File: Revert"
+			],
+			[
+				"refres",
+				"Project: Refresh Folders"
+			],
+			[
+				"toggle wra",
+				"Word Wrap: Toggle"
+			],
+			[
+				"rean",
+				"Rename File"
+			],
+			[
+				"r",
+				"Rename File"
+			],
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"rename",
+				"Rename File"
+			],
+			[
+				"comment",
+				"Toggle Comment"
+			],
+			[
+				"inde",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"indent",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"colorsublime",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"color scehem",
+				"UI: Select Color Scheme"
+			],
+			[
+				"ren",
+				"Rename File"
+			],
+			[
+				"reanm",
+				"Rename File"
+			],
+			[
+				"rename file",
+				"Rename File"
+			],
+			[
+				"Re",
+				"Rename File"
+			],
+			[
+				"Snippet: ",
+				"Snippet: std::vector"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"git ",
+				"Git: Commit history"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"package control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"sec",
+				"Set Syntax: C"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 543.0,
+		"history":
+		[
+			"import networkx",
+			"print(__version__)",
+			"print(\"Hi\")",
+			"print(Hi)",
+			"ls",
+			"sublime.log_commands(True)",
+			"sublime.log_input(True)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/sarada/Desktop/Cygwin Home/Custom-Unix-Shell"
+	],
+	"file_history":
+	[
+		"/C/Users/sarada/Desktop/Cygwin Home/Custom-Unix-Shell/myutils.h",
+		"/C/Users/sarada/Desktop/Cygwin Home/Custom-Unix-Shell/custom-unix-shell.sublime-project",
+		"/C/Users/sarada/AppData/Roaming/Sublime Text 3/Packages/User/VectorSnippet.sublime-snippet",
+		"/C/Users/sarada/AppData/Roaming/Sublime Text 3/Packages/User/UsingStd.sublime-snippet",
+		"/C/Users/sarada/Documents/Another Conemu thing.xml",
+		"/C/Users/sarada/Documents/ConEmu Colors.xml",
+		"/C/Users/sarada/AppData/Local/Programs/Python/Python37-32/Volume.py",
+		"/C/cygwin64/home/sarada/osLab/outputf.in",
+		"/C/cygwin64/home/sarada/osLab/two.txt",
+		"/C/cygwin64/home/sarada/osLab/bankers_safety.c",
+		"/C/cygwin64/home/sarada/osLab/t2_bankers_safety.txt",
+		"/C/cygwin64/home/sarada/osLab/t3_bankers_safety.txt",
+		"/C/cygwin64/home/sarada/osLab/t1_bankers_safety.txt",
+		"/C/cygwin64/home/sarada/osLab/inputf.in",
+		"/C/cygwin64/home/sarada/oopLab/inputf.in",
+		"/C/cygwin64/home/sarada/oopLab/outputf.in",
+		"/C/Users/sarada/AppData/Roaming/Sublime Text 3/Packages/User/CC Build.sublime-build",
+		"/C/cygwin64/home/sarada/oopLab/virtual_functions_for_animal_class.cc",
+		"/C/cygwin64/home/sarada/oopLab/friend_mem_func.cpp",
+		"/C/cygwin64/home/sarada/Programs/Alchemy for FB/philstone.cpp",
+		"/C/cygwin64/home/sarada/Programs/CodeChef/chfqueue.cpp",
+		"/C/cygwin64/home/sarada/Programs/CodeChef/stupmach.cpp",
+		"/C/cygwin64/home/sarada/Programs/CodeChef/zco12002.cpp",
+		"/C/cygwin64/home/sarada/Programs/CodeChef/euron.cpp",
+		"/C/cygwin64/home/sarada/Programs/CodeChef/compiler.cpp",
+		"/C/Users/sarada/AppData/Roaming/Sublime Text 3/Packages/User/Custom C Build.sublime-build",
+		"/C/cygwin64/home/sarada/oopLab/assignment/outputf.in",
+		"/C/cygwin64/home/sarada/oopLab/assignment/inputf.in",
+		"/C/cygwin64/home/sarada/oopLab/assignment/15-static_keyword_in_classes_and_default_args.cc",
+		"/C/cygwin64/home/sarada/oopLab/assignment/13-operator_overloading.cc",
+		"/C/cygwin64/home/sarada/oopLab/assignment/11-dynamic_memory_function_overloading.cc",
+		"/C/cygwin64/home/sarada/oopLab/assignment/12-constructer_overloading_function_ptrs (Just Ridiculous Design).cc",
+		"/C/cygwin64/home/sarada/oopLab/assignment/4-constructors.cc",
+		"/C/cygwin64/home/sarada/oopLab/bad_allocation.cpp",
+		"/C/cygwin64/home/sarada/oopLab/assignment/OOP Assignment.sublime-project",
+		"/C/Users/sarada/Desktop/! Study Stuff/Coursera - Parallelism on Intel Architecture/String Vibration Problem Code/worker.cc",
+		"/C/Users/sarada/Desktop/Shows/A Unwatched/week5-mpi-string-vibration/worker.cc",
+		"/C/cygwin64/home/sarada/oopLab/array_of_boxes.cpp",
+		"/C/cygwin64/home/sarada/oopLab/array_of_objects_and_parameterized_constructor.cpp",
+		"/C/cygwin64/home/sarada/oopLab/hiding_inherited_functionality.cc",
+		"/C/cygwin64/home/sarada/oopLab/inheritance_constructor_order.cc",
+		"/C/Users/sarada/Desktop/! Study Stuff/Coursera - Parallelism on Intel Architecture/String Vibration Problem Code/ravis_worker.cc",
+		"/C/Users/sarada/Desktop/Shows/A Unwatched/submission2/submission 2/worker.cc",
+		"/C/Users/sarada/Desktop/! Study Stuff/Semester 5 - DBMS/Lab Assignment/01-07 Queries.sql",
+		"/C/Users/sarada/Desktop/! Study Stuff/Semester 5 - DBMS/Lab Assignment/08-11 Queries.sql",
+		"/C/Users/sarada/Desktop/! Study Stuff/Semester 5 - DBMS/Lab Assignment/08-11 Queries with Outputs.txt",
+		"/C/Users/sarada/Desktop/! Study Stuff/Semester 5 - DBMS/Lab Assignment/01-07 Queries with Outputs.txt",
+		"/C/Users/sarada/Desktop/! Study Stuff/Semester 5 - DBMS/Lab Assignment/08-11 Setting Up Data.py",
+		"/C/Users/sarada/Desktop/! Study Stuff/Coursera - Parallelism on Intel Architecture/String Vibration Problem Code/L.h",
+		"/C/Users/sarada/Desktop/! Study Stuff/Coursera - Parallelism on Intel Architecture/String Vibration Problem Code/L.cc",
+		"/C/Users/sarada/Desktop/! Study Stuff/Coursera - Parallelism on Intel Architecture/String Vibration Problem Code/main.cc",
+		"/C/Users/sarada/Desktop/! Study Stuff/Coursera - Parallelism on Intel Architecture/String Vibration Problem Code/Makefile",
+		"/C/cygwin64/home/sarada/oopLab/temp.cpp",
+		"/C/cygwin64/home/sarada/oopLab/ptr_to_data_mem.cpp",
+		"/C/cygwin64/home/sarada/oopLab/assignment/10-this_pointer_and_references.cc",
+		"/C/cygwin64/home/sarada/oopLab/assignment/8-more_objects_and_functions.cc",
+		"/C/cygwin64/home/sarada/oopLab/assignment/5-friend_class_friend_function.cc",
+		"/C/cygwin64/home/sarada/oopLab/assignment/1-class_and_objects.cc",
+		"/C/cygwin64/home/sarada/oopLab/assignment/2-friend_class_inline_function.cc",
+		"/C/Users/sarada/AppData/Roaming/Sublime Text 3/Packages/User/C++.sublime-settings",
+		"/C/Users/sarada/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/sarada/Desktop/! Study Stuff/Semester 5 - Cyber Security/ImageSteganography/GUI.py",
+		"/C/Users/sarada/Desktop/! Study Stuff/Semester 5 - Cyber Security/ImageSteganography/Stenography.py",
+		"/C/Users/sarada/Desktop/! Study Stuff/Semester 5 - Cyber Security/ImageSteganography/MergingImages.py",
+		"/C/Users/sarada/Desktop/! Study Stuff/Semester 5 - Cyber Security/ImageSteganography/temp.py",
+		"/C/Users/sarada/AppData/Local/Vivaldi/Application/3.1.1929.48/resources/vivaldi/panelfunctions_custom.js",
+		"/C/Users/sarada/AppData/Local/Vivaldi/Application/3.1.1929.48/resources/vivaldi/panelfunctions_custom_further_modified.js",
+		"/C/Users/sarada/Desktop/! Study Stuff/Semester 5 - Cyber Security/ImageSteganography/Convert_Image.py",
+		"/C/cygwin64/home/sarada/osLab/Copying/newcopying.c",
+		"/C/cygwin64/home/sarada/osLab/Copying/copying.c",
+		"/C/cygwin64/home/sarada/osLab/pthread_basics/array_of_threads.c",
+		"/C/cygwin64/home/sarada/osLab/pthread_basics/commadn line outs.txt",
+		"/C/cygwin64/home/sarada/osLab/pthread_basics/multiple_threads.c",
+		"/C/Users/sarada/Desktop/! Study Stuff/Semester 5 - Cyber Security/ImageSteganography/Images/Convert_Image.py",
+		"/C/Users/sarada/Desktop/! Study Stuff/Semester 5 - Cyber Security/ImageSteganography/Images/Stenography.py",
+		"/C/Users/sarada/Desktop/! Study Stuff/Semester 5 - Cyber Security/ImageSteganography/q",
+		"/C/Users/sarada/Desktop/! Study Stuff/Semester 5 - Cyber Security/Cross Site Scripting Video.txt",
+		"/C/Users/sarada/AppData/Local/Temp/Temp1_Multithreaded Filtering Problem Solution.zip/worker.cc",
+		"/C/Users/sarada/AppData/Local/Programs/Python/Python37-32/coursera_w1.py",
+		"/C/Users/sarada/Desktop/! Study Stuff/Coursera - Django/Solution/index.htm",
+		"/C/Users/sarada/Desktop/! Study Stuff/Coursera - Django/Solution/blocks.css",
+		"/C/Users/sarada/AppData/Roaming/fman/Plugins/User/Settings/Theme.css",
+		"/C/Users/sarada/AppData/Roaming/fman/Plugins/User/Settings/Key Bindings (Windows).json",
+		"/C/Users/sarada/AppData/Roaming/fman/Plugins/User/Settings/Panes (Windows).json",
+		"/C/Users/sarada/AppData/Roaming/fman/Plugins/User/Settings/Core Settings (Windows).json",
+		"/C/Users/sarada/Desktop/Shows/A Unwatched/Parallel Databases.pdf",
+		"/C/Users/sarada/Documents/MyClips.ahk",
+		"/C/cygwin64/home/sarada/osLab/pthread_basics/basic.c",
+		"/C/cygwin64/home/sarada/osLab/pthread_basics/binary_search_multithreaded.c",
+		"/C/Users/sarada/Desktop/! Study Stuff/Semester 5 - Data Communication/DjVu Document - Copy.pdf",
+		"/C/Users/sarada/Desktop/! Study Stuff/Semester 5 - Data Communication/Textbook - Data Communications and Networking by Forouzan.pdf",
+		"/C/Users/sarada/Desktop/! Study Stuff/Semester 5 - Data Communication/Syllabus.pdf",
+		"/C/cygwin64/home/sarada/osLab/BhargavisBoundedBuffer.c",
+		"/C/Users/sarada/.jupyter/jupyter_notebook_config.py",
+		"/C/Users/sarada/Desktop/! Study Stuff/Coursera - Django/myroot/myproject/urls.py",
+		"/C/Users/sarada/Desktop/! Study Stuff/Coursera - Django/myroot/site/dj4e.htm",
+		"/C/Users/sarada/Desktop/! Study Stuff/Coursera - Django/myroot/site/hello.txt",
+		"/C/Users/sarada/AppData/Local/Programs/Python/Python37-32/renamer.py",
+		"/C/Users/sarada/Desktop/! Study Stuff/Coursera - Django/myroot/polls/urls.py",
+		"/C/Users/sarada/Desktop/! Study Stuff/Coursera - Django/myroot/polls/models.py",
+		"/C/Users/sarada/Desktop/! Study Stuff/Coursera - Django/myroot/myproject/settings.py",
+		"/C/Users/sarada/Desktop/! Study Stuff/Coursera - Django/myroot/polls/views.py",
+		"/C/Users/sarada/AppData/Roaming/fman/styles.qss (Doesnt' work)",
+		"/C/Users/sarada/AppData/Roaming/fman/Contents/Resources/styles.qss",
+		"/C/Users/sarada/AppData/Local/Programs/Python/Python37-32/WorkingWithSql/WorkingWithSql.py",
+		"/C/Users/sarada/AppData/Local/Programs/Python/Python37-32/WorkingWithSql/BasicCrud.py",
+		"/C/Users/sarada/AppData/Local/Programs/Python/Python37-32/WorkingWithSql/BasicCrudTest.py",
+		"/C/Users/sarada/AppData/Local/Programs/Python/Python37-32/WorkingWithSql/first_database.db",
+		"/C/cygwin64/home/sarada/osLab/round_robin.c",
+		"/C/$AV_AVG/$VAULT/vault.db",
+		"/C/Users/sarada/Desktop/Shows/A Unwatched/www.db-book.com/db7/university-lab-dir/sample_tables-dir/DDL+drop.sql",
+		"/C/Users/sarada/Desktop/Shows/A Unwatched/www.db-book.com/db7/university-lab-dir/sample_tables-dir/smallRelations/smallRelationsInsertFile.sql",
+		"/C/cygwin64/home/sarada/osLab/fcfs_with_arrivals/fcfs_with_arrivals.c",
+		"/C/Users/sarada/Documents/LaptopsLinks.txt",
+		"/C/Users/sarada/Documents/Laptops - Copy.html",
+		"/C/Users/sarada/Documents/CapslockAndEscSwap.ahk",
+		"/C/Users/sarada/Documents/Meetings.html",
+		"/C/Users/sarada/Documents/Bookmarks 09-09-2020.html",
+		"/C/Users/sarada/Documents/WORK/Resume-SanthoshNarasimhan.doc",
+		"/C/Users/sarada/Documents/dumped.con",
+		"/C/cygwin64/home/sarada/osLab/sjf_with_arrivals/sjf_with_arrivals.c",
+		"/C/cygwin64/home/sarada/osLab/sjf_scheduling.c",
+		"/C/cygwin64/home/sarada/osLab/fcfs_scheduling.c",
+		"/C/cygwin64/home/sarada/osLab/RahulsThird.c",
+		"/C/cygwin64/home/sarada/osLab/RahulsFirst.c",
+		"/C/Users/sarada/VirtualBox VMs/My Kali/My Kali.vbox",
+		"/C/cygwin64/home/sarada/osLab/fcfs_with_arrivals.c",
+		"/C/cygwin64/home/sarada/osLab/BhargavisFCFS.c"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.cc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2137,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1844,
+								1844
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1976.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "builtins.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 807,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								782,
+								782
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 725.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 33.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 270.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 157.0
+	},
+	"pinned_build_system": "Packages/C++/C++ Single File.sublime-build",
+	"project": "custom-unix-shell.sublime-project",
+	"replace":
+	{
+		"height": 81.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 176.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 3
+	}
+}

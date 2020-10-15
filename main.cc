@@ -1,3 +1,6 @@
+#include "builtins.h"
+#include "myutils.h"
+
 #include <iostream>
 #include <cstdio>
 #include <string>
@@ -5,38 +8,13 @@
 #include <list>
 #include <vector>
 #include <cstdlib>
-
+#include <climits>
 
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/wait.h>
 
 using namespace std;
-
-template <typename T>
-void print_container(T & v) {
-	for (auto ele: v) cout << ele << endl;
-}
-
-char* string_to_charptr(string s)
-{
-	return const_cast<char*>(s.c_str());
-}
-// custom execv to take in a vector of strings, not overloaded to avoid confusion
-// as second param instead of char* const*
-int myexecv(const string& path, const vector<string>& args)
-{
-	vector<char*> av;
-	// first arg has to be the path of executable
-	av.push_back(string_to_charptr(path));
-
-    for (const string& a: args) 
-        av.push_back(string_to_charptr(a));
-
-    av.push_back(nullptr); // list of args must be null terminated
-    return execv(path.c_str(), &av[0]);
-}
-
 
 
 class Shell
@@ -46,19 +24,66 @@ class Shell
 	vector<string> args;
 	string current_working_dir;
 	string hostname;
+	Builtins builtins;
 	//vector<pid_t> bg_jobs;
 public:
+	Shell() : builtins(*this) {}
 	void main_loop();
 	void show_prompt();
 	void read_line();
 	void parse_line();
 	void execute_command();
+	string get_current_working_dir() {return current_working_dir;}
+
+	// (cd and pwd need to be able to modify/view shell's private vars)
+	friend int Builtins:: pwd(const vector<string>&);
+	friend int Builtins:: cd(const vector<string>&);
 	
 };
 
+
+/*------------------------------------------------*/
+
+// Defined here where both classes are not "improperly defined" anymore.
+// (cd and pwd need to be able to modify/view shell's private vars)
+// Can't be bothered to create a shell.h, shell.cc and builtins.cc right now.
+int Builtins:: cd(const vector<string>& args)
+{
+	int status = chdir(string_to_charptr(args[0]));
+	if (status) cerr << "Directory not found.\n";
+	else
+	{
+		char cwd[PATH_MAX]; // constant defined in climits
+		if (getcwd(cwd, sizeof(cwd)) != NULL) // this func is from unistd
+		{
+			shell.current_working_dir = cwd;
+		}
+		else
+		{
+			cerr << "getcwd() error.\n";
+			status = 1;
+		}
+	}
+	return status;
+}
+
+int Builtins:: pwd(const vector<string>& args)
+{
+	cout << shell.current_working_dir << '\n';
+	return 0;
+}
+
+/*------------------------------------------------*/
+
 void Shell:: show_prompt()
 {
-	cout << "\033[33m" << getenv("USERNAME") << "@" /*<< getenv("HOSTNAME") */<<"\033[00m" << " % ";
+	cout 	<< "\033[33m" 
+			<< getenv("USERNAME") 
+			<< " "
+			<< current_working_dir
+			<<"\033[00m" 
+			<< '\n'
+			<< "% ";
 }
 
 void Shell:: read_line()
@@ -98,16 +123,29 @@ void Shell:: execute_command()
 			wait(&status);
 		}
 	}
-	else if (command == "cd") // shell builtin
+
+	else if (command == "cd")
 	{
-		int status = chdir(string_to_charptr(args[0]));
-		if (status) cerr << "not found\n";
+		builtins.cd(args);
+	}
+	else if (command == "help")
+	{
+		builtins.help(args);
+	}
+	else if (command == "pwd")
+	{
+		builtins.pwd(args);
+	}
+	else if (command == "echo")
+	{
+		builtins.echo(args);
 	}
 }
 
 void Shell:: main_loop()
 {
 	chdir(getenv("HOME"));
+	current_working_dir = getenv("HOME");
 	do
 	{
 		show_prompt();
@@ -116,6 +154,8 @@ void Shell:: main_loop()
 		execute_command();
 	} while(command != "exit" and command != "q");
 }
+
+/*------------------------------------------------*/
 
 int main()
 {
