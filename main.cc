@@ -1,14 +1,17 @@
+const bool IS_CYGWIN = true; // Change this to false if you're on Linux
+
 #include "builtins.h"
 #include "myutils.h"
 
-#include <iostream>
-#include <cstdio>
-#include <string>
-#include <sstream>
-#include <list>
-#include <vector>
-#include <cstdlib>
 #include <climits>
+#include <cstdio>
+#include <cstdlib>
+#include <iostream>
+#include <list>
+#include <sstream>
+#include <stdexcept>
+#include <string>
+#include <vector>
 
 #include <unistd.h>
 #include <sys/types.h>
@@ -26,13 +29,23 @@ class Shell
 	string hostname;
 	Builtins builtins;
 	//vector<pid_t> bg_jobs;
+
+	const vector<string> path_variable = {
+        "/usr/local/sbin",
+        "/usr/local/bin",
+        "/usr/sbin",
+        "/usr/bin",
+        "/sbin",
+        "/bin"
+    };
 public:
 	Shell() : builtins(*this) {}
 	void main_loop();
 	void show_prompt();
 	void read_line();
 	void parse_line();
-	void execute_command();
+	void find_and_execute_command();
+	void execute_external_command();
 	string get_current_working_dir() {return current_working_dir;}
 
 	// (cd and pwd need to be able to modify/view shell's private vars)
@@ -109,22 +122,31 @@ void Shell:: parse_line()
 }
 
 
-void Shell:: execute_command()
+void Shell:: execute_external_command()
 {
-	if (command == "ls")
+	// BUG
+	// Ctrl+C not only stops command execution, it also kills the entire shell
+
+	// let child process execute command
+	if (fork() == 0)
 	{
-		if (fork() == 0)
-		{
-			myexecv("/bin/ls", args);
-		}
-		else
-		{
-			int status;
-			wait(&status);
-		}
+		myexecv(command, args);
+	}
+	else
+	{
+		int status;
+		wait(&status);
 	}
 
-	else if (command == "cd")
+}
+
+void Shell:: find_and_execute_command()
+{
+	bool found = true;
+
+	// Checking if command matches builtins
+	// Did not use hashmap due to some difficulty with function pointers
+	if (command == "cd")
 	{
 		builtins.cd(args);
 	}
@@ -140,6 +162,40 @@ void Shell:: execute_command()
 	{
 		builtins.echo(args);
 	}
+	else if (command == "exit" or command == "q")
+	{}
+
+	// Checking if command matches one of the external commands in bin, sbin, etc.
+	else 
+	{
+		string modified_command;
+		if (IS_CYGWIN and not endswith(command, ".exe")) // Doubt: Will this work for all commands?
+			modified_command = command + ".exe";
+		
+		modified_command = find_path_of_file(modified_command, path_variable, found);
+		if (found)
+		{
+			command = modified_command;
+			try {execute_external_command();}
+			catch (runtime_error rerr) {cerr << rerr.what() << endl;} // should never happen if found is true; it's just there as a sanity check
+		}
+	}
+	
+	if (not found) // the command is called by the user by its absolute or relative path
+	{
+		// we're not verifying whether that file exists
+		// we'll just try to execute it and if execv complains, we throw an error
+		// might not be the best way to do this!
+		try {execute_external_command();}
+		catch (runtime_error rerr) {cerr << rerr.what() << endl;} // may happen
+	}
+
+	// TODO
+	// Check if commands match stuff in $PATH variable
+
+	// BUG
+	// For some reason you need to type in "q" or "exit" multiple times to exit.
+
 }
 
 void Shell:: main_loop()
@@ -151,7 +207,7 @@ void Shell:: main_loop()
 		show_prompt();
 		read_line();
 		parse_line();
-		execute_command();
+		find_and_execute_command();
 	} while(command != "exit" and command != "q");
 }
 
