@@ -6,6 +6,7 @@ const bool IS_CYGWIN = true; // Change this to false if you're on Linux
 #include <climits>
 #include <cstdio>
 #include <cstdlib>
+#include <fstream>
 #include <iostream>
 #include <list>
 #include <sstream>
@@ -19,7 +20,7 @@ const bool IS_CYGWIN = true; // Change this to false if you're on Linux
 
 using namespace std;
 
-
+int loop_ctr = 0; //
 class Shell
 {
 	string line;
@@ -96,6 +97,7 @@ void Shell:: show_prompt()
 			<< current_working_dir
 			<<"\033[00m" 
 			<< '\n'
+			<< loop_ctr ///
 			<< "% ";
 }
 
@@ -177,7 +179,7 @@ void Shell:: find_and_execute_command()
 		{
 			command = modified_command;
 			try {execute_external_command();}
-			catch (runtime_error rerr) {cerr << rerr.what() << endl;} // should never happen if found is true; it's just there as a sanity check
+			catch (runtime_error rerr){cerr << rerr.what() << endl;} // should never happen if found is true; it's just there as a sanity check
 		}
 	}
 	
@@ -186,7 +188,11 @@ void Shell:: find_and_execute_command()
 		// we're not verifying whether that file exists
 		// we'll just try to execute it and if execv complains, we throw an error
 		// might not be the best way to do this!
-		try {execute_external_command();}
+		try{
+			ifstream fin(command);
+			if (!fin) throw runtime_error("Relative path not found.");
+			execute_external_command();
+		}
 		catch (runtime_error rerr) {cerr << rerr.what() << endl;} // may happen
 	}
 
@@ -208,6 +214,7 @@ void Shell:: main_loop()
 		read_line();
 		parse_line();
 		find_and_execute_command();
+		loop_ctr++;//
 	} while(command != "exit" and command != "q");
 }
 

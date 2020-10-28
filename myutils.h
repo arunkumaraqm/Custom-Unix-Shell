@@ -88,7 +88,7 @@ void myexecv(const string& path, const vector<string>& args)
 
     if (status < 0)
     {
-    	throw runtime_error("File found is not executable or file not found!");
+    	throw runtime_error("File found is not executable.");
     }
 }
 
