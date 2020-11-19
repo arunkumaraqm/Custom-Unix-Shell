@@ -9,6 +9,7 @@ const bool IS_CYGWIN = true; // Change this to false if you're on Linux
 #include <fstream>
 #include <iostream>
 #include <list>
+#include <regex>
 #include <sstream>
 #include <stdexcept>
 #include <string>
@@ -45,6 +46,7 @@ public:
 	void show_prompt();
 	void read_line();
 	void parse_line();
+	void substitute_wildcards();
 	void find_and_execute_command();
 	void execute_external_command();
 	string get_current_working_dir() {return current_working_dir;}
@@ -97,7 +99,7 @@ void Shell:: show_prompt()
 			<< current_working_dir
 			<<"\033[00m" 
 			<< '\n'
-			<< loop_ctr ///
+			// << loop_ctr ///
 			<< "% ";
 }
 
@@ -123,6 +125,62 @@ void Shell:: parse_line()
 	args.erase(args.begin());
 }
 
+void Shell:: substitute_wildcards()
+{
+	vector<string> new_args;
+	for (auto iarg: args)
+	{
+		if (iarg.find("*") != string::npos or
+			iarg.find("?") != string::npos)
+		{
+			// cout << "found * or ?\n";
+
+			// Converting wildcard pattern to regex pattern
+			// 1. Escape any periods
+			// 2. Change ? to .
+			// 3. Change * to .*
+			string new_iarg;
+			for(auto ch: iarg)
+			{
+				if (ch == '.')
+				{
+					new_iarg += "\\.";
+				}
+				else if (ch == '?')
+				{
+					new_iarg += ".";
+				}
+				else if (ch == '*')
+				{
+					new_iarg += ".*";
+				}
+				else
+				{
+					new_iarg += ch;
+				}
+			}
+
+			regex pattern(new_iarg);
+
+			// Adding to new_args every file name that matches the regular expression
+			auto search_list = list_files_and_folders(current_working_dir);
+			for (auto fname: search_list)
+			{
+				if (fname != "." and fname != "..") // . and .. should be ignored for wildcard matching
+				if (regex_match(fname, pattern))
+				{
+					new_args.push_back(fname);
+				}
+			}
+		}
+		else
+		{
+			new_args.push_back(iarg);
+		}
+	}
+
+	args = new_args;
+}
 
 void Shell:: execute_external_command()
 {
@@ -185,9 +243,6 @@ void Shell:: find_and_execute_command()
 	
 	if (not found) // the command is called by the user by its absolute or relative path
 	{
-		// we're not verifying whether that file exists
-		// we'll just try to execute it and if execv complains, we throw an error
-		// might not be the best way to do this!
 		try{
 			ifstream fin(command);
 			if (!fin) throw runtime_error("Relative path not found.");
@@ -198,9 +253,6 @@ void Shell:: find_and_execute_command()
 
 	// TODO
 	// Check if commands match stuff in $PATH variable
-
-	// BUG
-	// For some reason you need to type in "q" or "exit" multiple times to exit.
 
 }
 
@@ -213,6 +265,7 @@ void Shell:: main_loop()
 		show_prompt();
 		read_line();
 		parse_line();
+		substitute_wildcards();
 		find_and_execute_command();
 		loop_ctr++;//
 	} while(command != "exit" and command != "q");

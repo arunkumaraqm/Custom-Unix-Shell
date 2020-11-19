@@ -36,10 +36,30 @@ vector<string> list_dir(const string& path)
     }
 
     while ((entry = readdir(dir)) != NULL) {
-    	// 0x04 is the d_type for directories
-    	// 0x08 is the d_type for others (??)
+        // 0x04 is the d_type for directories
+        // 0x08 is the d_type for others (??)
         if(entry->d_type != 0x04 )
-        	filenames.push_back(entry->d_name);
+            filenames.push_back(entry->d_name);
+    }
+
+    closedir(dir);
+    return filenames;
+}
+
+// Returns list of files and folder in given folder
+vector<string> list_files_and_folders(const string& path) 
+{
+    struct dirent *entry;
+    vector<string> filenames;
+
+    DIR *dir = opendir(string_to_charptr(path));
+    if (dir == NULL) {
+        return filenames;
+    }
+
+    while ((entry = readdir(dir)) != NULL) 
+    {
+        filenames.push_back(entry->d_name);
     }
 
     closedir(dir);
