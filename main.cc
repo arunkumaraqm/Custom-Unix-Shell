@@ -1,5 +1,6 @@
 const bool IS_CYGWIN = true; // Change this to false if you're on Linux
 
+#include "banner.h"
 #include "builtins.h"
 #include "myutils.h"
 
@@ -127,24 +128,27 @@ void Shell:: parse_line()
 
 void Shell:: substitute_wildcards()
 {
+	// note that not all args are file names; options and option params are also args
 	vector<string> new_args;
 	for (auto iarg: args)
 	{
 		if (iarg.find("*") != string::npos or
 			iarg.find("?") != string::npos)
 		{
-			// cout << "found * or ?\n";
-
 			// Converting wildcard pattern to regex pattern
 			// 1. Escape any periods
 			// 2. Change ? to .
 			// 3. Change * to .*
+
+			// POSSIBLE BUG: This might break if file name contains 
+			// other characters that can be interpreted as regex operations.
+
 			string new_iarg;
 			for(auto ch: iarg)
 			{
 				if (ch == '.')
 				{
-					new_iarg += "\\.";
+					new_iarg += "\\."; // escaping the period
 				}
 				else if (ch == '?')
 				{
@@ -159,7 +163,7 @@ void Shell:: substitute_wildcards()
 					new_iarg += ch;
 				}
 			}
-
+			// cout << new_iarg << endl;//
 			regex pattern(new_iarg);
 
 			// Adding to new_args every file name that matches the regular expression
@@ -179,7 +183,8 @@ void Shell:: substitute_wildcards()
 		}
 	}
 
-	args = new_args;
+	// If no matches were found, retain original args
+	if (new_args.size()) args = new_args;
 }
 
 void Shell:: execute_external_command()
@@ -260,6 +265,8 @@ void Shell:: main_loop()
 {
 	chdir(getenv("HOME"));
 	current_working_dir = getenv("HOME");
+	display_banner();
+
 	do
 	{
 		show_prompt();
